@@ -1,0 +1,127 @@
+/* Bootstrap 3 */
+
+	.row {
+	    padding-left: 10%;
+	    padding-right: 10%;
+	}
+
+	.container-fluid {
+	    padding: 0px !important;
+	}
+
+/* Main HTML */
+
+	* {
+		color: $black;
+	}
+
+	html {
+		body {
+			overflow-x: hidden;
+		}
+	}
+
+	body {
+		opacity: 1;
+		@include transition(1s ease-out opacity);
+	}
+
+	body.fadeOut {
+    	opacity: 0;
+    	@include transition(1s ease-out);
+    }
+
+	h1, h2, h3, p, a, { 
+		font-family: 'Muli', sans-serif !important; 
+	}
+
+	h1 {
+		font-size: 27px !important;
+		line-height: 1.2em !important;
+		letter-spacing: .5px;
+	}
+
+	p {
+		font-size: 17px !important;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	a:not(.goTop), i, li, button {
+	    @include transition(.5s);
+	    	&:hover {
+	    		color: $red !important;
+	    		text-decoration: none !important;
+	    	}
+	}
+
+	a {
+		&:link, &:visited, &:active, &:focus { color: $black; text-decoration: none }
+	}
+
+/* Navigation Bar */
+
+	.headerNav {
+		margin-top: 30px;
+	    margin-bottom: 20px;
+	    font-size: 20px;
+
+		    &:nth-child(2) {
+	    		text-align: right;
+	  		}
+
+		    	.headerItem {
+		    		display: inline;
+		    		margin-left: 30px;
+		    	}
+	}
+
+	.headerItem:nth-child(3) {
+		margin-left: 28px !important;
+	}
+
+/* Drop Down Menu */
+
+	.dropDown {
+    	display: none;
+    	float: right;
+  	}
+
+  	.dropBtn {
+		background-color: $black;
+		color: $white;
+		padding: 8px;
+		font-size: 10px;
+		border: none;
+	}
+
+  	.dropdownContent {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 120px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		right:16px;
+  }
+
+    .dropdownContent a {
+      color: $black;
+      padding: 12px 16px;
+      display: block;
+      	&:hover {
+      		background-color: $gray;
+      	}
+  }
+
+    .show { display:block; }
+
+/* Footer */
+
+	.footer {
+    	margin-top: 30px;
+    	margin-bottom: 30px;
+    	text-align: left;
+	}

@@ -242,36 +242,43 @@ i {
 
 /* Images & Titles */
 /* line 35, ../sass/partials/_templateCopy.scss */
-.workTitle, .workType, .workNav {
-  font-weight: 600;
+.workTitle {
+  font-weight: 800 !important;
   font-size: 25px !important;
 }
 
 /* line 40, ../sass/partials/_templateCopy.scss */
+.workType, .workNav {
+  font-weight: 600;
+  font-size: 20px !important;
+}
+
+/* line 45, ../sass/partials/_templateCopy.scss */
 .workSumm {
   margin-top: 23px;
   font-weight: 600;
   font-size: 20px !important;
 }
 
-/* line 46, ../sass/partials/_templateCopy.scss */
+/* line 51, ../sass/partials/_templateCopy.scss */
 .coverImage {
   position: relative;
   z-index: -1;
 }
 
-/* line 51, ../sass/partials/_templateCopy.scss */
+/* line 56, ../sass/partials/_templateCopy.scss */
 .workImage {
   margin-top: 35px;
 }
 
-/* line 55, ../sass/partials/_templateCopy.scss */
+/* line 60, ../sass/partials/_templateCopy.scss */
 .workDesc {
   margin-top: 25px !important;
+  padding-left: 0px !important;
 }
 
 /* Project Navigation */
-/* line 61, ../sass/partials/_templateCopy.scss */
+/* line 67, ../sass/partials/_templateCopy.scss */
 .workNav {
   margin-top: 30px;
   margin-bottom: 60px;
@@ -279,7 +286,7 @@ i {
 }
 
 /* Go-To-Top Navigation */
-/* line 69, ../sass/partials/_templateCopy.scss */
+/* line 75, ../sass/partials/_templateCopy.scss */
 .goTop {
   padding: 9px;
   position: fixed;
@@ -289,29 +296,29 @@ i {
 }
 
 @media screen and (max-width: 766px) {
-  /* line 2, ../sass/partials/_mediaQueries.scss */
+  /* line 3, ../sass/partials/_mediaQueries.scss */
   .dropDown {
     display: inline-block !important;
   }
 
-  /* line 6, ../sass/partials/_mediaQueries.scss */
+  /* line 7, ../sass/partials/_mediaQueries.scss */
   .headerNav:nth-child(2):not(.closeNav) {
     display: none !important;
   }
 
-  /* line 10, ../sass/partials/_mediaQueries.scss */
+  /* line 11, ../sass/partials/_mediaQueries.scss */
   .overlay {
     visibility: hidden !important;
   }
 
-  /* line 14, ../sass/partials/_mediaQueries.scss */
+  /* line 15, ../sass/partials/_mediaQueries.scss */
   .row {
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
 }
 @media screen and (min-width: 766px) {
-  /* line 21, ../sass/partials/_mediaQueries.scss */
+  /* line 24, ../sass/partials/_mediaQueries.scss */
   .headerNav:nth-child(3) {
     display: none !important;
   }

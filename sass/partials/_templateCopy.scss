@@ -32,9 +32,14 @@
 
 /* Images & Titles */
 
-	.workTitle, .workType, .workNav {
-		font-weight: 600;
+	.workTitle, {
+		font-weight: 800 !important;
 		font-size: 25px !important;
+	}
+
+	.workType, .workNav {
+		font-weight: 600;
+		font-size: 20px !important;
 	}
 
 	.workSumm {
@@ -54,6 +59,7 @@
 
 	.workDesc {
 		margin-top: 25px !important;
+		padding-left: 0px !important;
 	}
 
 /* Project Navigation */

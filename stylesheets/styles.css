@@ -240,7 +240,7 @@ i {
   font-size: 17px !important;
 }
 
-/* Images & Titles */
+/* Videos + Images & Titles */
 /* line 35, ../sass/partials/_templateCopy.scss */
 .workTitle {
   font-weight: 800 !important;
@@ -272,13 +272,23 @@ i {
 }
 
 /* line 60, ../sass/partials/_templateCopy.scss */
+.workVideo {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/* line 69, ../sass/partials/_templateCopy.scss */
 .workDesc {
   margin-top: 25px !important;
   padding-left: 0px !important;
 }
 
 /* Project Navigation */
-/* line 67, ../sass/partials/_templateCopy.scss */
+/* line 76, ../sass/partials/_templateCopy.scss */
 .workNav {
   margin-top: 30px;
   margin-bottom: 60px;
@@ -286,7 +296,7 @@ i {
 }
 
 /* Go-To-Top Navigation */
-/* line 75, ../sass/partials/_templateCopy.scss */
+/* line 84, ../sass/partials/_templateCopy.scss */
 .goTop {
   padding: 9px;
   position: fixed;

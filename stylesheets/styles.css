@@ -138,7 +138,7 @@ a:link, a:visited, a:active, a:focus {
 }
 /* line 114, ../sass/partials/_universalStyles.scss */
 .dropdownContent a:hover {
-  background-color: #dfe5e3;
+  background-color: #DEDEDE;
 }
 
 /* line 119, ../sass/partials/_universalStyles.scss */
@@ -150,8 +150,10 @@ a:link, a:visited, a:active, a:focus {
 /* line 123, ../sass/partials/_universalStyles.scss */
 .footer {
   margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
   text-align: left;
+  background-color: #DEDEDE;
 }
 
 /* Gallery Item Overlay */
@@ -209,7 +211,7 @@ a:link, a:visited, a:active, a:focus {
 /* Header */
 /* line 3, ../sass/partials/_templateCopy.scss */
 .headerPanel {
-  background-color: #dfe5e3;
+  background-color: #DEDEDE;
   width: 100%;
   position: absolute;
 }
@@ -217,7 +219,7 @@ a:link, a:visited, a:active, a:focus {
 /* line 9, ../sass/partials/_templateCopy.scss */
 .description {
   margin-top: 60px;
-  background-color: #dfe5e3;
+  background-color: #DEDEDE;
   height: 100%;
   margin-bottom: 0px;
   padding-bottom: 20px;
@@ -290,18 +292,17 @@ i {
 /* Project Navigation */
 /* line 76, ../sass/partials/_templateCopy.scss */
 .workNav {
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   display: inline;
 }
 
 /* Go-To-Top Navigation */
-/* line 84, ../sass/partials/_templateCopy.scss */
+/* line 83, ../sass/partials/_templateCopy.scss */
 .goTop {
   padding: 9px;
   position: fixed;
   top: 110%;
-  left: 48.3%;
+  left: 47.3%;
   background: #212121;
 }
 

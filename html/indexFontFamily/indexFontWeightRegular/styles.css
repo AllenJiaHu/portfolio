@@ -1,0 +1,393 @@
+/*NAVIGATION*/
+
+#tool {
+	float: right;
+	z-index: 9999;
+	position: fixed;
+	margin-left: 1%;
+}
+
+#blackVers {
+	height: 40px;
+	width: 40px;
+	background-color: black;
+  	border-style: solid;
+  	border-color: white;
+  }
+
+#whiteVers {
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	stroke: black;
+	border-style: solid;
+    border-color: black;
+    margin-top: 20%;
+}
+
+#nav {
+	mix-blend-mode: difference;
+	position: fixed;
+	margin-top: -3%;
+	margin-left: 4.5%;
+	width: 100%;
+	z-index: 9999;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	padding: 1%;
+}
+
+li {
+	text-indent: -40%;
+}
+
+/*MOBILE*/
+
+@media only screen and (max-width: 1000px) {
+
+	
+	/*ALL HORIZONTAL DIVS*/
+		.topBar, .crossBar, .bowlTopBar, .bottomBar, .bowlBottomBar, .halfCrossBar, .middleVertex, .threeQuarterCrossBar {
+			height: 14% !important;
+		}
+
+	/*ALL VERTICAL DIVS*/
+		.partialLeftStem, .partialRightStem, .fullLeftStem, .fullRightStem, .topBowl, .bottomBowl, .rightBowl, .middleStem, .halfLeftStem, .topStroke, .bottomLeg, .partialRightBowl, .bottomTail, .period, .explanationMark, .bottomHalfLeftStem, .leftSpine, .rightSpine, .threeQuarterLeftStem, .rightArm, .xTopLeft, .xTopRight, .xBottomLeft, .xBottomRight, .topHalfLeftStem, .topHalfRightStem, .halfMiddleStem, .leftDiagonalStroke, .rightDiagonalStroke {
+				width: 20% !important;
+		}
+
+	/*Fixing Letter G*/
+	.bottomBowl {
+		height: 20% !important;
+	}
+
+	/*Fixing Letter B, D*/
+	.bowlTopBar, .bowlBottomBar {
+		width: 75% !important;
+	}
+
+	.topBowl {
+		margin-right: 25% !important;
+	}
+
+	.bottomLeg, .xBottomRight {
+		margin-left: 80% !important;
+	}
+
+	.halfMiddleStem, .middleStem {
+		margin-left: 38% !important;
+	}
+
+	.bottomTail {
+		margin-left: 50% !important;
+	}
+
+	.topStroke {
+		margin-right: 50% !important;
+	}
+
+	/* X/1 = W */
+
+	.topBar, .crossBar, .bottomBar {
+		width: 100%;
+	}
+
+	/* X/1.34 = W */
+	
+	.threeQuarterCrossBar, .middleVertex {
+		width: 60%;
+		margin-left: 24%;
+	}
+
+	/* Y/4 = H */
+	.topBar, .crossBar, .bottomBar, .bowlTopBar, .halfCrossBar, .leftSpine, .leftDiagonalStroke, .rightDiagonalStroke, .threeQuarterCrossBar, .partialRightBowl, .bowlBottomBar {
+		height: 30%;
+	}
+
+	/* Y/2 = H */
+	.rightSpine, .bottomTail, .rightBowl, .topHalfLeftStem, .bottomHalfLeftStem, .bottomLeg {
+		height: 50%;
+	}
+
+	/* Y/1.34 = H */
+	.partialLeftStem, .partialRightStem, .threeQuarterLeftStem, .middleStem {
+		height: 75%;
+	}
+
+	/* Y/1 = H */
+	.fullLeftStem, .fullRightStem {
+		height: 100%;
+	}
+
+} /*DON'T DELETE > CLOSING CLAUSE FOR MEDIA QUERIES*/
+
+/*DESKTOP*/
+
+@media only screen and (min-width: 1000px) {
+
+	/*ALL HORIZONTAL DIVS*/
+		.topBar, .crossBar, .bowlTopBar, .bottomBar, .bowlBottomBar, .halfCrossBar, .middleVertex, .threeQuarterCrossBar {
+			height: 18% !important;
+		}
+
+	/*ALL VERTICAL DIVS*/
+		.partialLeftStem, .partialRightStem, .fullLeftStem, .fullRightStem, .topBowl, .bottomBowl, .rightBowl, .middleStem, .halfLeftStem, .topStroke, .bottomLeg, .partialRightBowl, .bottomTail, .period, .explanationMark, .bottomHalfLeftStem, .leftSpine, .rightSpine, .threeQuarterLeftStem, .rightArm, .xTopLeft, .xTopRight, .xBottomLeft, .xBottomRight, .topHalfLeftStem, .topHalfRightStem, .halfMiddleStem, .leftDiagonalStroke, .rightDiagonalStroke {
+				width: 10% !important;
+		}
+
+	/*Fixing Letter G*/
+	.bottomBowl {
+		height: 50% !important;
+	}
+
+	/*Fixing Letter B, D*/
+	.bowlTopBar, .bowlBottomBar {
+		width: 90% !important;
+	}
+
+	.topBowl {
+		margin-right: 10% !important;
+	}
+
+	.bottomLeg, .xBottomRight {
+		margin-left: 90% !important;
+	}
+
+	.halfMiddleStem, .middleStem {
+		margin-left: 45% !important;
+	}
+
+	.bottomTail {
+		margin-left: 80% !important;
+	}
+
+	.topStroke {
+		margin-right: 9% !important;
+	}
+
+	#capitalG .glyph .bottomBowl {
+		height: 26% !important;
+	}
+
+	#capitalS .glyph .rightSpine {
+		height: 30% !important;
+	}
+
+	/* X/1 = W */
+
+	.topBar, .crossBar, .bottomBar {
+		width: 100%;
+	}
+
+	/* X/1.34 = W */
+	
+	.threeQuarterCrossBar, .middleVertex {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	/* Y/4 = H */
+	.topBar, .crossBar, .bottomBar, .bowlTopBar, .halfCrossBar, .leftSpine, .leftDiagonalStroke, .rightDiagonalStroke, .threeQuarterCrossBar, .partialRightBowl, .bowlBottomBar {
+		height: 40%;
+	}
+
+	/* Y/2 = H */
+	.rightSpine, .bottomTail, .rightBowl, .topHalfLeftStem, .bottomHalfLeftStem, .bottomLeg {
+		height: 59%;
+	}
+
+	/* Y/1.34 = H */
+	.partialLeftStem, .partialRightStem, .threeQuarterLeftStem, .middleStem {
+		height: 82%;
+	}
+
+	/* Y/1 = H */
+	.fullLeftStem, .fullRightStem {
+		height: 100%;
+	}
+
+} /*DON'T DELETE > CLOSING CLAUSE FOR MEDIA QUERIES*/
+
+
+/*UNIT*/
+	.glyph {
+		margin-left: 5%; /*BASE-VALUE: 5%*/
+		margin-right: 5%; /*BASE-VALUE: 5%*/
+		margin-top: 5%; /*BASE-VALUE: 5%*/
+		margin-bottom: 5%; /*BASE-VALUE: 5%*/
+		height: 800px; /*BASE-VALUE: 800px*/
+		position: relative;
+	}
+
+
+/*APPLY ALL COLOR*/
+	body {
+		background-color: black;
+	}
+
+	.topBar, .partialLeftStem, .partialRightStem, .fullLeftStem, .fullRightStem, .crossBar, .bowlTopBar, .topBowl, .bottomBowl, .bottomBar, .bowlBottomBar, .rightBowl, .halfCrossBar, .middleStem, .halfLeftStem, .topStroke, .bottomLeg, .partialRightBowl, .bottomTail, .period, .explanationMark, .bottomHalfLeftStem, .leftSpine, .rightSpine, .rightArm, .threeQuarterLeftStem, .middleVertex, .xTopLeft, .xTopRight, .xBottomLeft, .xBottomRight, .threeQuarterCrossBar, .halfMiddleStem, .topHalfLeftStem, .topHalfRightStem, .leftDiagonalStroke, .rightDiagonalStroke{
+		background-color: white;
+	}
+
+
+
+/*COMPONENTS*/
+
+.partialLeftStem {
+	float: left;
+}
+
+.partialRightStem {
+	float: right;
+}
+
+.fullLeftStem {
+	float: left;
+}
+
+.fullRightStem {
+	float: right;
+}
+
+.crossBar {
+  	top: 50%;
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);	
+  	position: absolute;
+}
+
+.bowlTopBar {
+	width: 87.5%;
+}
+
+.topBowl {
+	height: 29%;
+	margin-right: 12.5%;
+	float: right;
+}
+
+.bottomBowl {
+	height: 37%;
+	float: right;
+	clear: right;
+	bottom: 0px;
+}
+
+.bottomBar {
+	position:absolute;
+	bottom: 0px; 	
+}
+
+.bowlBottomBar {
+	width: 87.5%;
+	position:absolute;
+	bottom: 0px; 	
+}
+
+.rightBowl {
+	float: right;
+}
+
+.halfCrossBar {
+	width: 50%;
+	float: right;
+	position: relative;
+	margin-top: 12%;
+}
+
+.middleStem {
+ 	margin-left: auto;
+  	margin-right: auto;
+}
+
+.halfMiddleStem {
+	height: 50%;
+	bottom: 0px;
+	position: absolute;
+	margin-left: 40%;
+}
+
+.bottomHalfLeftStem {
+	position:absolute;
+	bottom: 0px; 	
+}
+
+.topHalfRightStem {
+	height: 50%;
+	float: right;
+}
+
+.rightArm {
+	height: 82%;
+	float: right;
+}
+
+.threeQuarterCrossBar {
+  	top: 50%;
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);	
+  	position: absolute;
+}
+
+.topStroke {
+	height: 50%;
+	float: right;
+}
+
+.bottomLeg {
+	margin-left: 90%;
+	position: absolute;
+	bottom: 0px; 	
+}
+
+.partialRightBowl {
+	float: right;
+}
+
+.bottomTail {
+	margin-left: 60%;
+	position: absolute;
+	bottom: 0px;
+}
+
+.rightSpine {
+	float: right;
+	bottom: 0;
+	clear: both;
+}
+
+.rightDiagonalStroke {
+	bottom: 0;
+	clear: both;
+}
+
+.leftDiagonalStroke {
+	float: right;
+	clear: both;
+}
+
+.xTopLeft {
+	height: 41%;
+}
+
+.xTopRight {
+	height: 41%;
+	float: right;
+}
+
+.xBottomLeft {
+	height: 41%;
+	bottom: 0;
+	position: absolute;
+}
+
+.xBottomRight {
+	height: 41%;
+	margin-left: 80%;
+	bottom: 0;
+	position: absolute;
+}
+

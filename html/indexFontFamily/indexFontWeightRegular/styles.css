@@ -1,49 +1,3 @@
-/*NAVIGATION*/
-
-#tool {
-	float: right;
-	z-index: 9999;
-	position: fixed;
-	margin-left: 1%;
-}
-
-#blackVers {
-	height: 40px;
-	width: 40px;
-	background-color: black;
-  	border-style: solid;
-  	border-color: white;
-  }
-
-#whiteVers {
-	height: 40px;
-	width: 40px;
-	background-color: white;
-	stroke: black;
-	border-style: solid;
-    border-color: black;
-    margin-top: 20%;
-}
-
-#nav {
-	mix-blend-mode: difference;
-	position: fixed;
-	margin-top: -3%;
-	margin-left: 4.5%;
-	width: 100%;
-	z-index: 9999;
-}
-
-a {
-	color: white;
-	text-decoration: none;
-	padding: 1%;
-}
-
-li {
-	text-indent: -40%;
-}
-
 /*MOBILE*/
 
 @media only screen and (max-width: 1000px) {
@@ -56,37 +10,45 @@ li {
 
 	/*ALL VERTICAL DIVS*/
 		.partialLeftStem, .partialRightStem, .fullLeftStem, .fullRightStem, .topBowl, .bottomBowl, .rightBowl, .middleStem, .halfLeftStem, .topStroke, .bottomLeg, .partialRightBowl, .bottomTail, .period, .explanationMark, .bottomHalfLeftStem, .leftSpine, .rightSpine, .threeQuarterLeftStem, .rightArm, .xTopLeft, .xTopRight, .xBottomLeft, .xBottomRight, .topHalfLeftStem, .topHalfRightStem, .halfMiddleStem, .leftDiagonalStroke, .rightDiagonalStroke {
-				width: 20% !important;
+				width: 18% !important;
 		}
 
 	/*Fixing Letter G*/
 	.bottomBowl {
-		height: 20% !important;
+		height: 49% !important;
 	}
 
 	/*Fixing Letter B, D*/
 	.bowlTopBar, .bowlBottomBar {
-		width: 75% !important;
+		width: 82% !important;
 	}
 
 	.topBowl {
-		margin-right: 25% !important;
+		margin-right: 18% !important;
 	}
 
 	.bottomLeg, .xBottomRight {
-		margin-left: 80% !important;
+		margin-left: 82% !important;
 	}
 
 	.halfMiddleStem, .middleStem {
-		margin-left: 38% !important;
+		margin-left: 43% !important;
 	}
 
 	.bottomTail {
-		margin-left: 50% !important;
+		margin-left: 64% !important;
 	}
 
 	.topStroke {
-		margin-right: 50% !important;
+		margin-right: 18% !important;
+	}
+
+	.xTopLeft, .xTopRight, .xBottomLeft, .xBottomRight {
+		height: 43%;
+	}
+
+	#capitalD .glyph .rightBowl {
+		height: 72% !important;
 	}
 
 	/* X/1 = W */
@@ -98,13 +60,13 @@ li {
 	/* X/1.34 = W */
 	
 	.threeQuarterCrossBar, .middleVertex {
-		width: 60%;
-		margin-left: 24%;
+		width: 64%;
+		margin-left: 18%;
 	}
 
 	/* Y/4 = H */
 	.topBar, .crossBar, .bottomBar, .bowlTopBar, .halfCrossBar, .leftSpine, .leftDiagonalStroke, .rightDiagonalStroke, .threeQuarterCrossBar, .partialRightBowl, .bowlBottomBar {
-		height: 30%;
+		height: 36%;
 	}
 
 	/* Y/2 = H */
@@ -113,8 +75,8 @@ li {
 	}
 
 	/* Y/1.34 = H */
-	.partialLeftStem, .partialRightStem, .threeQuarterLeftStem, .middleStem {
-		height: 75%;
+	.partialLeftStem, .partialRightStem, .threeQuarterLeftStem, .middleStem, .rightArm {
+		height: 86%;
 	}
 
 	/* Y/1 = H */
@@ -165,7 +127,15 @@ li {
 	}
 
 	.topStroke {
-		margin-right: 9% !important;
+		margin-right: 10% !important;
+	}
+
+	.xTopLeft, .xTopRight, .xBottomLeft, .xBottomRight {
+		height: 41%;
+	}
+
+	#capitalD .glyph .rightBowl {
+		height: 64% !important;
 	}
 
 	#capitalG .glyph .bottomBowl {
@@ -196,11 +166,11 @@ li {
 
 	/* Y/2 = H */
 	.rightSpine, .bottomTail, .rightBowl, .topHalfLeftStem, .bottomHalfLeftStem, .bottomLeg {
-		height: 59%;
+		height: 60%;
 	}
 
 	/* Y/1.34 = H */
-	.partialLeftStem, .partialRightStem, .threeQuarterLeftStem, .middleStem {
+	.partialLeftStem, .partialRightStem, .threeQuarterLeftStem, .middleStem, .rightArm {
 		height: 82%;
 	}
 
@@ -293,9 +263,10 @@ li {
 
 .halfCrossBar {
 	width: 50%;
+	margin-left: 50%;
 	float: right;
-	position: relative;
-	margin-top: 12%;
+	position: absolute;
+	top: 40%;
 }
 
 .middleStem {
@@ -321,7 +292,6 @@ li {
 }
 
 .rightArm {
-	height: 82%;
 	float: right;
 }
 
@@ -369,23 +339,16 @@ li {
 	clear: both;
 }
 
-.xTopLeft {
-	height: 41%;
-}
-
 .xTopRight {
-	height: 41%;
 	float: right;
 }
 
 .xBottomLeft {
-	height: 41%;
 	bottom: 0;
 	position: absolute;
 }
 
 .xBottomRight {
-	height: 41%;
 	margin-left: 80%;
 	bottom: 0;
 	position: absolute;
